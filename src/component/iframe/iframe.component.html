@@ -1,4 +1,6 @@
 <div class="iframe">
   <a class="title" id="{{id}}" [href]="safeUrl" target="_blank">{{ title }}</a>
-  <iframe [src]="safeUrl" frameborder="0" [ngClass]="{'sm': themeType == '1'}"></iframe>
+  <div class="border">
+    <iframe [src]="safeUrl" frameborder="0" [ngClass]="{'sm': themeType == '1'}"></iframe>
+  </div>
 </div>

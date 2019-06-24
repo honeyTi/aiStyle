@@ -10,11 +10,17 @@
             color: #1890ff;
         }
     }
-    iframe {
-        width: 100%;
-        height: 450px;
-        &.sm {
-            height: 250px;
+    .border {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        iframe {
+            width: 100%;
+            height: 450px;
+            &.sm {
+                height: 250px;
+            }
         }
     }
+    
 }
