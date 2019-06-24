@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <title>账号绑定-个人信息</title>
+    <script type="text/javascript" src="http://www.zxxk.com/service/js/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/personal.css">
+    <link rel="stylesheet" href="../../css/zane-calendar.min.css">
+    <link rel="stylesheet" href="../../fonts/iconfont.css">
+    <link rel="stylesheet" href="../../css/account-setting.css">
+    <script type="text/javascript" src="../../js/header.js"></script>
+    <script src="../../fonts/iconfont.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div id="logo" class="xkw-top wrapper clearfix">
+            <a class="logo" href="http://www.zxxk.com/" target="_blank" title="e卷通组卷网"></a>
+            <span>账号设置</span>
+        </div>
+    </div>
+    <div class="clearfix container-box">
+        <div class="left-box"></div>
+        <div class="content clearfix">
+            <div class="left-nav fl">
+                <ul class="menu-list">
+                    <li><a href="./account-setting-index.html"><span class="iconfont icon-shouye"></span><span
+                                class="text-style">首页</span></a></li>
+                    <li class="active"><a href="./account-setting-personinfo.html"><span class="iconfont icon-gerenxinxi"></span>个人信息</a></li>
+                    <li><a href="./account-setting-means.html"><span class="iconfont icon-wodezichan"></span>我的资产</a>
+                    </li>
+                    <li><a href="./account-setting-bind.html"><span class="iconfont icon-zhanghaobangding"></span>账号绑定</a></li>
+                    <li><a href="./account-setting-safe.html"><span class="iconfont icon-zhanghaoanquan"></span>账号安全</a></li>
+                </ul>
+            </div>
+            <div class="right-content fr">
+                <!-- 个人信息模块 -->
+                <h2 class="main-title">个人信息</h2>
+                <div class="account-info clearfix">
+                    <div class="account-avater fl">
+                        <img src="../../images/care.png" alt="">
+                        <div class="modify-avater">修改头像</div>
+                    </div>
+                    <div class="account-info-map fl">
+                        <div class="account-name clearfix">
+                            <span class="text">胡素素</span>
+                            <input type="text" value="胡素素" class="value hide">
+                            <span class="iconfont icon-xiugai1 iconfont-reset"></span>
+                            <span class="iconfont icon-wancheng1 iconfont-complete hide"></span>
+                        </div>
+                        <div class="account-info-list clearfix">
+                            <div class="info-item">
+                                <span class="info-item-label">用户ID：</span>
+                                <span class="text">1234567890</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-item-label">用户名：</span>
+                                <span class="text">xkw_031712085</span>
+
+                            </div>
+                            <div class="info-item">
+                                <span class="info-item-label">手机号：</span>
+                                <span class="text">1234567890</span>
+                                <span class="iconfont icon-xiugai1"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-item-label">邮箱：</span>
+                                <span class="text">xy@mail.com</span>
+                                <span class="iconfont icon-xiugai1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 基本信息模块 -->
+                <h2 class="info-subtitle">
+                    基本信息
+                    <span class="iconfont icon-xiugai1 modify-basic-btn"></span>
+                    <span class="iconfont icon-wancheng1 modify-basic-complete hide"></span>
+                </h2>
+                <div class="basic-account-info clearfix hide" data-modify="yes">
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">姓名</span>：</span>
+                        <input type="text" value="kanade" class="basic-info-input" onfocus="this.select()" data-text>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">生日</span>：</span>
+                        <input type="text" value="" class="basic-info-input" id="birthday" autocomplete="off" data-text>
+                    </div>
+                    <div class="basic-info-item width-280">
+                        <span class="basic-info-label"><span class="letter-space-2">性别</span>：</span>
+                        <label class="radio-diy"><input type="radio" name="test" /><span class="iconfont icon-weixuanzhong"></span><span
+                                class="iconfont icon-plus-radio"></span>
+                                <b>男</b>
+                        </label>
+                        <label class="radio-diy"><input type="radio" name="test" /><span class="iconfont icon-weixuanzhong"></span><span
+                                class="iconfont icon-plus-radio"></span>
+                                <b>女</b></label>
+                        <label class="radio-diy"><input type="radio" name="test" /><span class="iconfont icon-weixuanzhong"></span><span
+                                class="iconfont icon-plus-radio"></span>
+                               <b>保密</b>
+                        </label>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">地区</span>：</span>
+                        <input type="text" value="北京" class="basic-info-input" id="city" data-text>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">地址</span>：</span>
+                        <input type="text" value="房山良乡" class="basic-info-input" id="main-area" data-text>
+                    </div>
+                    <div class="basic-info-item width-730">
+                        <span class="basic-info-label"><span class="letter-space-2">简介</span>：</span>
+                        <textarea name="" id="" type="text" cols="30" rows="3" class="basic-info-textarea" data-text></textarea>
+                    </div>
+                    <div class="basic-info-item width-730 info-handle">
+                        <span class="basic-info-label"></span>
+                        <div class="width-310">
+                            <span class="account-btn btn-default basic-modify-cancel">取消</span>
+                            <span class="account-btn btn-blue basic-modify-save">保存</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 基本信息展示 -->
+                <div class="basic-account-info clearfix" data-modify="no">
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">姓名</span>：</span>
+                        <span class="info-text">kanade</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">生日</span>：</span>
+                        <span class="info-text">1991-04-19</span>
+                    </div>
+                    <div class="basic-info-item width-280">
+                        <span class="basic-info-label"><span class="letter-space-2">性别</span>：</span>
+                        <span class="info-text">男</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">地区</span>：</span>
+                        <span class="info-text">北京</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">地址</span>：</span>
+                        <span class="info-text">房山良乡</span>
+                    </div>
+                    <div class="basic-info-item width-730">
+                        <span class="basic-info-label"><span class="letter-space-2">简介</span>：</span>
+                        <span
+                            class="info-text">教学基本功扎实，注重实效，善于反思。数次在省、市级教学比赛中获奖，曾获得市级优秀少先队辅导员，省教师基本功比赛二等奖，全国小学作文范文写作比赛一等奖等，撰写多篇论文获省市级奖励，辅导学生多次获奖。多篇论文在省市论文评比中获奖。</span>
+                    </div>
+                </div>
+                <!-- 身份信息 -->
+                <h2 class="info-subtitle">
+                    身份信息
+                    <span class="iconfont icon-xiugai1 modify-identity-btn"></span>
+                    <span class="iconfont icon-wancheng1 modify-identity-complete hide"></span>
+                </h2>
+                <div class="identity-info identity-info-margin clearfix hide" data-modify="yes">
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">身份</span>：</span>
+                        <label class="radio-diy">
+                            <input type="radio" name="test" />
+                            <span class="iconfont icon-weixuanzhong"></span>
+                            <span class="iconfont icon-plus-radio"></span>
+                            <b>教师</b>
+                            <i class="iconfont icon-teacher"></i>
+                        </label>
+                        <label class="radio-diy">
+                            <input type="radio" name="test" />
+                            <span class="iconfont icon-weixuanzhong"></span>
+                            <span class="iconfont icon-plus-radio"></span>
+                            <b>学生</b>
+                            <i class="iconfont icon-student"></i>
+                        </label>
+                        <label class="radio-diy">
+                            <input type="radio" name="test" />
+                            <span class="iconfont icon-weixuanzhong"></span>
+                            <span class="iconfont icon-plus-radio"></span>
+                            <b>家长</b>
+                            <i class="iconfont icon-parents"></i>
+                        </label>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">学段</span>：</span>
+                        <div class="info-choose-labels clearfix">
+                            <span class="choose-label active">小学</span>
+                            <span class="choose-label">初中</span>
+                            <span class="choose-label">高中</span>
+                        </div>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">年级：</span>
+                        <div class="info-choose-labels clearfix">
+                            <span class="choose-label active">六年级</span>
+                            <span class="choose-label">七年级</span>
+                            <span class="choose-label">八年级</span>
+                            <span class="choose-label">九年级</span>
+                        </div>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">学科：</span>
+                        <div class="info-choose-labels clearfix labels-diy">
+                            <span class="choose-label active">语文</span>
+                            <span class="choose-label">数学</span>
+                            <span class="choose-label">英语</span>
+                            <span class="choose-label">物理</span>
+                            <span class="choose-label">化学</span>
+                            <span class="choose-label">生物</span>
+                            <span class="choose-label">地理</span>
+                            <span class="choose-label">历史</span>
+                            <span class="choose-label">政治</span>
+                            <span class="choose-label">体育</span>
+                            <span class="choose-label">思想与道德</span>
+                            <span class="choose-label">信息技术</span>
+                        </div>
+                    </div>
+                    <div class="basic-info-item width-360">
+                        <span class="basic-info-label">教材:</span>
+                        <div class="select" id="select">
+                            <div class="select-value">数学（人教版）</div>
+                            <span class="iconfont icon-xiajiantou"></span>
+                            <ul class="select-option hide">
+                                <li>数学（人教版）</li>
+                                <li>语文（人教版）</li>
+                                <li>物理（人教版）</li>
+                                <li>化学（人教版）</li>
+                                <li>历史（人教版）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="basic-info-item width-360">
+                        <span class="basic-info-label">学校:</span>
+                        <input type="text" value="沧州中学">
+                    </div>
+                    <div class="basic-info-item width-360 identity-handle">
+                        <span class="basic-info-label"></span>
+                        <div class="account-btn-list">
+                            <span class="account-btn btn-default identify-modify-cancel">取消</span>
+                            <span class="account-btn btn-blue identify-modify-save">保存</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 身份信息展示 -->
+                <div class="identity-info identity-info-show clearfix" data-modify="no">
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">身份</span>：</span>
+                        <span class="info-text">学生</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label"><span class="letter-space-2">学段</span>：</span>
+                        <span class="info-text">高中</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">年级：</span>
+                        <span class="info-text">六年级</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">学科：</span>
+                        <span class="info-text">语文</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">教材：</span>
+                        <span class="info-text">人教版（2019）</span>
+                    </div>
+                    <div class="basic-info-item">
+                        <span class="basic-info-label">学校：</span>
+                        <span class="info-text">沧州市第一中学</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+        </div>
+    </div>
+    <script src="../../js/cityJson.js"></script>
+    <script src="../../js/citySet.js"></script>
+    <script src="../../js/Popt.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/zane-calendar.min.js"></script>
+    <script>
+        +function () {
+            init();
+            // 初始化函数
+            function init() {
+                // 修改账号名字
+                modifyName();
+                // 点击subtitle修改切换修改内容
+                modifyInfo();
+            }
+            // 点击修改按钮
+            function modifyName() {
+                // 点击修改按钮后修改元素
+                $('.iconfont-reset').click(function () {
+                    $(this).addClass('hide').siblings('.iconfont-complete').removeClass('hide');
+                    $(this).siblings('.value').removeClass('hide').siblings('.text').addClass('hide');
+                    $(this).siblings('.value').focus().select();
+                });
+                // 点击完成执行函数
+                $('.iconfont-complete').click(function () {
+                    $(this).siblings('.text').text($(this).siblings('.value').val());
+                    $(this).siblings('.value').addClass('hide').siblings('.text').removeClass('hide');
+                    $(this).addClass('hide').siblings('.iconfont-reset').removeClass('hide');
+                })
+            }
+            // basic-info信息修改保存装填切换
+            function modifyInfo() {
+                // 修改基本信息；
+                $('.modify-basic-btn').click(function () {
+                    $(this).addClass('hide').siblings().removeClass('hide');
+                    $('.basic-account-info').addClass('hide').siblings('.basic-account-info[data-modify="yes"]').removeClass('hide');
+                });
+                $('.modify-basic-complete').click(function () {
+                    $(this).addClass('hide').siblings().removeClass('hide');
+                    $('.basic-account-info').addClass('hide').siblings('.basic-account-info[data-modify="no"]').removeClass('hide');
+                });
+                // 取消按钮逻辑
+                $('.basic-modify-cancel').click(function () {
+                    $('.basic-account-info').addClass('hide').siblings('.basic-account-info[data-modify="no"]').removeClass('hide');
+                })
+                // 保存按钮逻辑
+                $('.basic-modify-save').click(function () {
+                    $(this).addClass('hide').siblings().removeClass('hide');
+                    $('.basic-account-info').addClass('hide').siblings('.basic-account-info[data-modify="no"]').removeClass('hide');
+                })
+                // 修改身份信息
+                $('.modify-identity-btn').click(function () {
+                    $(this).addClass('hide').siblings().removeClass('hide');
+                    $('.identity-info').addClass('hide').siblings('.identity-info[data-modify="yes"]').removeClass('hide');
+                });
+                $('.modify-identity-complete').click(function () {
+                    $(this).addClass('hide').siblings().removeClass('hide');
+                    $('.identity-info').addClass('hide').siblings('.identity-info[data-modify="no"]').removeClass('hide');
+                })
+                // 取消按钮逻辑
+                $('.identify-modify-cancel').click(function () {
+                    $('.identity-info').addClass('hide').siblings('.identity-info[data-modify="no"]').removeClass('hide');
+                })
+                // 保存按钮逻辑
+                $('.identify-modify-save').click(function () {
+                    $('.identity-info').addClass('hide').siblings('.identity-info[data-modify="no"]').removeClass('hide');
+                })
+            }
+            $("#city").click(function (e) {
+                SelCity(this, e, $(this).val());
+                $('#city').addClass('inputClick');
+            });
+            // 点击显示与隐藏select option
+            $('#select').dropDownSelect();
+            // 生日插件
+            zaneDate({
+                elem: '#birthday',
+                format:'yyyy-MM-dd'
+            })
+        }()
+    </script>
+</body>
+
+</html>

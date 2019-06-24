@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IframeComponent } from './iframe.component'
+import { IframeComponent } from './iframe.component';
 
 @NgModule({
   declarations: [IframeComponent],

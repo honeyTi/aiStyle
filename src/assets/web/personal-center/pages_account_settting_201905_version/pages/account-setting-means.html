@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <title>账号绑定-我的资产</title>
+    <script type="text/javascript" src="http://www.zxxk.com/service/js/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/personal.css">
+    <link rel="stylesheet" href="../../fonts/iconfont.css">
+    <link rel="stylesheet" href="../../css/zane-calendar.min.css">
+    <link rel="stylesheet" href="../../css/account-setting.css">
+    <script type="text/javascript" src="../../js/header.js"></script>
+    <script src="../../fonts/iconfont.js"></script>
+    <script>
+         // 用enter代替tab切换下一行
+    </script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div id="logo" class="xkw-top wrapper clearfix">
+            <a class="logo" href="http://www.zxxk.com/" target="_blank" title="e卷通组卷网"></a>
+            <span>账号设置</span>
+        </div>
+    </div>
+    <div class="clearfix container-box">
+        <div class="left-box "></div>
+        <div class="content  clearfix">
+            <div class="left-nav fl">
+                <ul class="menu-list">
+                    <li><a href="./account-setting-index.html"><span class="iconfont icon-shouye"></span><span
+                                class="text-style">首页</span></a></li>
+                    <li><a href="./account-setting-personinfo.html"><span
+                                class="iconfont icon-gerenxinxi"></span>个人信息</a></li>
+                    <li class="active"><a href="./account-setting-means.html"><span
+                                class="iconfont icon-wodezichan"></span>我的资产</a></li>
+                    <li><a href="./account-setting-bind.html"><span
+                                class="iconfont icon-zhanghaobangding"></span>账号绑定</a></li>
+                    <li><a href="./account-setting-safe.html"><span class="iconfont icon-zhanghaoanquan"></span>账号安全</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content fr">
+                <!-- 我的资产模块 -->
+                <h2 class="main-title">我的资产</h2>
+                <div class="means-view clearfix">
+                    <div class="means-items">
+                        <dl class="means-item">
+                            <dd class="means-item-num">199.<span>00</span></dd>
+                            <dd class="means-item-title">
+                                <span>普通点</span>
+                                <span class="item-tip">可下载普通资源</span>
+                            </dd>
+                        </dl>
+                        <dl class="means-item">
+                            <dd class="means-item-num">199.<span>00</span></dd>
+                            <dd class="means-item-title">
+                                <span>高级点</span>
+                                <span class="item-tip">可下载特供资源</span>
+                            </dd>
+                        </dl>
+                        <dl class="means-item">
+                            <dd class="means-item-num">435.<span>00</span></dd>
+                            <dd class="means-item-title">
+                                <span>储值</span>
+                                <span class="item-tip">可下载精品资源，下载普通和特供资源时可自动抵换</span>
+                            </dd>
+                        </dl>
+                        <dl class="means-item">
+                            <dd class="means-item-num">199.<span>00</span></dd>
+                            <dd class="means-item-title">
+                                <span>现金</span>
+                                <span class="item-tip">可通过上传资源获取</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="means-deposit">
+                        <div class="deposit-pig" id="deposit-pig">
+
+                        </div>
+                        <a href="" class="account-btn btn-blue btn-pig">充值</a>
+                    </div>
+                </div>
+                <ul class="setting-tabs means-tabs clearfix">
+                    <li class="active">收支明细</li>
+                    <li>资产互换</li>
+                    <li>提现</li>
+                    <div class="underline"></div>
+                </ul>
+                <!-- 收支明细板块 -->
+                <div class="means-info-content " data-index="0">
+                    <!-- 我的资产明细查询,查询筛选 -->
+                    <div class="means-types">
+                        <div class="choose-bar clearfix">
+                            <span class="choose-bar-title">收支方式：</span>
+                            <div class="choose-bar-labels" id="type-cash">
+                                <span class="label-btn active">普通点</span>
+                                <span class="label-btn">高级点</span>
+                                <span class="label-btn">储值</span>
+                                <span class="label-btn">现金</span>
+                            </div>
+                        </div>
+                        <div class="choose-bar clearfix">
+                            <span class="choose-bar-title">收支类型：</span>
+                            <div class="choose-bar-labels">
+                                <span class="label-btn active">不限</span>
+                                <span class="label-btn">资料（通过）</span>
+                                <span class="label-btn">资料（退稿）</span>
+                                <span class="label-btn">下载完成</span>
+                                <span class="label-btn">兼职收支</span>
+                                <span class="label-btn">题库稿费奖励</span>
+                                <span class="label-btn">现金提现</span>
+                                <span class="label-btn">资料下载</span>
+                                <span class="label-btn">充值</span>
+                            </div>
+                        </div>
+                        <div class="choose-bar clearfix">
+                            <span class="choose-bar-title">查询时间：</span>
+                            <div class="choose-bar-labels">
+                                <span class="label-btn active">近7天</span>
+                                <span class="label-btn">近1个月</span>
+                                <span class="label-btn">近3个月</span>
+                                <span class="label-btn">近半年</span>
+                                <input type="text" autocomplete="false" class="common-input" id="time"/>
+                                <span class="iconfont icon-kaoshiyueli1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 信息头部 -->
+                    <div class="has-cash">
+                        <div class="means-info-title">
+                            <span>收入：<i>1.0</i>普通点</span>
+                            <span>支出：<i>1.0</i>普通点</span>
+                        </div>
+                        <!-- table表格 -->
+                        <div class="means-info-table">
+                            <table class="table-currency">
+                                <thead>
+                                    <tr>
+                                        <td>详情</td>
+                                        <td>收支类型</td>
+                                        <td>时间</td>
+                                        <td>收支金额</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a class="soft">2019届高考生物原创押题卷(三)(含解析) 全国通用</a>
+                                            <p class="soft-id">资料ID： <i>10243242</i></p>
+                                        </td>
+                                        <td>普通点</td>
+                                        <td>2019-02-02</td>
+                                        <td><span class="red">-1.0普通点</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="soft">2019届高考生物原创押题卷(三)(含解析) 全国通用2019届高考生物原创押题卷(三)(含解析) 全国通用</a>
+                                            <p class="soft-id">资料ID： <i>10243242</i></p>
+                                        </td>
+                                        <td>普通点</td>
+                                        <td>2019-02-02</td>
+                                        <td><span class="red">-780.0普通点</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            账号登录
+                                        </td>
+                                        <td>普通点</td>
+                                        <td>2019-02-02</td>
+                                        <td><span class="red">-1.0普通点</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <a href="" class="page-handle disabled">首页</a>
+                            <a href="" class="page-handle disabled">上一页</a>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="" class="page-handle">下一页</a>
+                            <a href="" class="page-handle">末页</a>
+                            <span>共25页</span>
+                            <span>跳转</span>
+                            <input type="text" class="common-input num-input" />
+                            <span>页</span>
+                            <a href="" class="page-handle pagination-sure">确定</a>
+                        </div>
+                    </div>
+                    <!-- 没有储值提示文字图片 -->
+                    <div class="no-cash hide" data-cash="0">
+                        <img src="../../images/no_cash_1.png" alt="">
+                        <p>该段时间内暂无收支明细哦</p>
+                    </div>
+                    <!-- 没有现金提示文字图片 -->
+                    <div class="no-cash hide" data-cash="1">
+                        <img src="../../images/no_cash_2.png" alt="">
+                        <p class="upload-tip">立即上传得丰厚现金奖励吧</p>
+                        <a class="account-btn btn-blue btn-upload">立即上传</a>
+                    </div>
+                </div>
+                <!-- 资产互换 -->
+                <div class="means-info-content hide" data-index="1">
+                    <div class="means-trade">
+                        <p class="trade-info"><span class="iconfont icon-bulb"></span>转换规则（1 元现金 = 1 储值 ； 1 储值 = 1 高级点 ；
+                            1 储值 = 5普通点 ）</p>
+                        <div class="trade-type clearfix">
+                            <div class="trade-cash fl">
+                                <p class="trade-type-title"><span class="y-line"></span>现金转换</p>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">转换金额:</span>
+                                    <input type="text" value="" class="trade-input">
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">转换类型</span>
+                                    <label class="radio-diy">
+                                        <input type="radio" name="trade1" />
+                                        <span class="iconfont icon-weixuanzhong"></span>
+                                        <span class="iconfont icon-plus-radio"></span>
+                                        <b><em>0</em> 储值点</b>
+                                    </label>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label"></span>
+                                    <span class="account-btn btn-blue">立即转换</span>
+                                </div>
+                            </div>
+                            <div class="trade-store fr">
+                                <p class="trade-type-title"><span class="y-line"></span> 储值转换</p>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">转换金额:</span>
+                                    <input type="text" value="" class="trade-input">
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">转换类型</span>
+                                    <label class="radio-diy">
+                                        <input type="radio" name="trade2" />
+                                        <span class="iconfont icon-weixuanzhong"></span>
+                                        <span class="iconfont icon-plus-radio"></span>
+                                        <b> <em>0</em> 储值点</b>
+                                    </label>
+                                    <label class="radio-diy">
+                                        <input type="radio" name="trade2" />
+                                        <span class="iconfont icon-weixuanzhong"></span>
+                                        <span class="iconfont icon-plus-radio"></span>
+                                        <b><em>0</em> 高级点</b>
+                                    </label>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label"></span>
+                                    <span class="account-btn btn-blue">立即转换</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="means-info-content hide" data-index="2">
+                    <div class="cash-out-label">
+                        <span class="cash-btn active">申请提现</span>
+                        <span class="cash-btn">账户管理</span>
+                        <span class="cash-btn">提现记录</span>
+                    </div>
+                    <!-- 账户提现 -->
+                    <div class="cash-handle-content clearfix " data-card="0">
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">选择账户：</span>
+                            <div class="basic-info-content width-675 clearfix">
+                                <div class="bank-card-item active">
+                                    <div class="bank-card-info clearfix">
+                                        <div class="bank-type">
+                                            <img src="../../images/icbc.png" alt="银行">
+                                        </div>
+                                        <div class="bank-card-num">尾号4949</div>
+                                    </div>
+                                    <p class="bank-person-info">持卡人姓名：胡素素</p>
+                                    <p class="bank-person-info">手机号：187****1123</p>
+                                    <span class="iconfont icon-xuanzhongjiaobiao"></span>
+                                </div>
+                                <div class="bank-card-item">
+                                    <div class="bank-card-info clearfix">
+                                        <div class="bank-type">
+                                            <img src="../../images/icbc.png" alt="银行">
+                                        </div>
+                                        <div class="bank-card-num">尾号4949</div>
+                                    </div>
+                                    <p class="bank-person-info">持卡人姓名：胡素素</p>
+                                    <p class="bank-person-info">手机号：187****1123</p>
+                                    <span class="iconfont icon-xuanzhongjiaobiao"></span>
+                                </div>
+                                <div class="bank-card-item bank-card-add">
+                                    <span class="iconfont icon-tianjia"></span>
+                                    <p class="add-info">添加银行卡</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">提现金额：</span>
+                            <div class="basic-info-content">
+                                <input type="text" class="common-input" data-text> <span class="right-tips">提取最大金额 <i>200.00</i>
+                                    元</span>
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">实际到账：</span>
+                            <div class="basic-info-content">
+                                <span class="cash-tips"> <i> 0 </i> 元（扣除个税0元）</span>
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">手机号：</span>
+                            <div class="basic-info-content">
+                                187****5210
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">图片验证码：</span>
+                            <div class="basic-info-content">
+                                <input type="text" class="common-input" data-text>
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label">短信验证码：</span>
+                            <div class="basic-info-content">
+                                <input type="text" class="common-input" data-text>
+                                <span class="account-btn btn-default">获取验证码</span>
+                            </div>
+                        </div>
+                        <div class="basic-info-item">
+                            <span class="basic-info-label"></span>
+                            <div class="basic-info-content">
+                                <span class="account-btn btn-blue">申请提现</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 账户管理 -->
+                    <div class="cash-handle-content cash-bank-account hide clearfix" data-card="1">
+                        <div class="bank-card-map">
+                            <div class="bank-account-manage">
+                                <div class="bank-card-item">
+                                    <div class="bank-card-info clearfix">
+                                        <div class="bank-type">
+                                            <img src="../../images/icbc.png" alt="银行">
+                                        </div>
+                                        <div class="bank-card-num">尾号4949</div>
+                                    </div>
+                                    <p class="bank-person-info">持卡人姓名：胡素素</p>
+                                    <p class="bank-person-info">手机号：187****1123</p>
+                                </div>
+                                <div class="bank-bind-time clearfix">
+                                    <p>添加时间：2019-05-10</p>
+                                    <div class="card-handle-btn">
+                                        <a class="card-revise">修改</a>
+                                        <a class="card-delete">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank-account-manage">
+                                <div class="bank-card-item">
+                                    <div class="bank-card-info clearfix">
+                                        <div class="bank-type">
+                                            <img src="../../images/icbc.png" alt="银行">
+                                        </div>
+                                        <div class="bank-card-num">尾号4949</div>
+                                    </div>
+                                    <p class="bank-person-info">持卡人姓名：胡素素</p>
+                                    <p class="bank-person-info">手机号：187****1123</p>
+                                </div>
+                                <div class="bank-bind-time clearfix">
+                                    <p>添加时间：2019-05-10</p>
+                                    <div class="card-handle-btn">
+                                        <a class="card-revise">修改</a>
+                                        <a class="card-delete">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank-account-manage">
+                                <div class="bank-card-item">
+                                    <div class="bank-card-info clearfix">
+                                        <div class="bank-type">
+                                            <img src="../../images/icbc.png" alt="银行">
+                                        </div>
+                                        <div class="bank-card-num">尾号4949</div>
+                                    </div>
+                                    <p class="bank-person-info">持卡人姓名：胡素素</p>
+                                    <p class="bank-person-info">手机号：187****1123</p>
+                                </div>
+                                <div class="bank-bind-time clearfix">
+                                    <p>添加时间：2019-05-10</p>
+                                    <div class="card-handle-btn">
+                                        <a class="card-revise">修改</a>
+                                        <a class="card-delete">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank-account-manage">
+                                <div class="bank-card-item bank-card-add">
+                                    <span class="iconfont icon-tianjia"></span>
+                                    <p class="add-info">添加银行卡</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bank-card-map hide clearfix">
+                            <p class="trade-info"><span class="iconfont icon-bulb"></span>温馨提示：由于公司政策原因，暂只支持通过“工商银行”提现</p>
+                            <div class="add-card-form">
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">转换金额:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">手机号:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">开户人姓名:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">开户人身份证号:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">开户省份:</span>
+                                    <div class="select" id="select">
+                                        <div class="select-value">北京</div>
+                                        <span class="iconfont icon-xiajiantou"></span>
+                                        <ul class="select-option hide">
+                                            <li>北京</li>
+                                            <li>上海</li>
+                                            <li>天津</li>
+                                            <li>河北</li>
+                                            <li>湖北</li>
+                                            <li>江苏</li>
+                                            <li>河南</li>
+                                            <li>黑龙江</li>
+                                            <li>山东</li>
+                                            <li>浙江</li>
+                                            <li>安徽</li>
+                                            <li>广西</li>
+                                            <li>广东</li>
+                                            <li>云南</li>
+                                            <li>四川</li>
+                                            <li>重庆</li>
+                                            <li>陕西</li>
+                                            <li>内蒙</li>
+                                            <li>辽宁</li>
+                                            <li>吉林</li>
+                                            <li>甘肃</li>
+                                            <li>山西</li>
+                                            <li>湖南</li>
+                                            <li>新疆</li>
+                                            <li>西藏</li>
+                                            <li>宁夏</li>
+                                            <li>青海</li>
+                                            <li>香港</li>
+                                            <li>澳门</li>
+                                            <li>台湾</li>
+                                            <li>贵州</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">工行卡号:</span>
+                                    <input type="text" value="" class="common-input" data-text id="next-select">
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">联系地址:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                    <span class="basic-info-label">备注:</span>
+                                    <input type="text" value="" class="common-input" data-text>
+                                </div>
+                                <div class="basic-info-item">
+                                        <span class="basic-info-label"></span>
+                                        <a class="account-btn btn-blue">确认提交</a>
+                                    </div>
+                            </div>
+                            <div class="add-card-tip">
+                                <div class="tip-content">
+                                    <p><span class="iconfont icon-anquan"></span>多重安全保障，我们承诺您的用卡安全</p>
+                                    <p class="sub-tip"><span class="iconfont icon-dian"></span>银行卡不关联网银，无盗取风险</p>
+                                    <p class="sub-tip"><span class="iconfont icon-dian"></span>手机验证码及密保工具，双重保障</p>
+                                    <p class="sub-tip"><span class="iconfont icon-dian"></span>银行卡信息加密保存，绝无他用</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 提现记录 -->
+                    <div class="cash-handle-content clearfix hide" data-card="2">
+                        <table class="table-currency">
+                            <thead>
+                                <tr>
+                                    <td>申请时间</td>
+                                    <td>开户人姓名</td>
+                                    <td>工行账号</td>
+                                    <td>提现金额</td>
+                                    <td>当前状态</td>
+                                    <td>备注</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2019-05-10 10:27</td>
+                                    <td>胡素素</td>
+                                    <td>**** **** **** 5789</td>
+                                    <td><span class="red">200</span></td>
+                                    <td>成功</td>
+                                    <td>---</td>
+                                </tr>
+                                <tr>
+                                    <td>2019-05-10 10:27</td>
+                                    <td>胡素素</td>
+                                    <td>**** **** **** 5789</td>
+                                    <td><span class="red">200</span></td>
+                                    <td>成功</td>
+                                    <td>---</td>
+                                </tr>
+                                <tr>
+                                    <td>2019-05-10 10:27</td>
+                                    <td>胡素素</td>
+                                    <td>**** **** **** 5789</td>
+                                    <td><span class="red">200</span></td>
+                                    <td>成功</td>
+                                    <td>---</td>
+                                </tr>
+                                <tr>
+                                    <td>2019-05-10 10:27</td>
+                                    <td>胡素素</td>
+                                    <td>**** **** **** 5789</td>
+                                    <td><span class="red">200</span></td>
+                                    <td>成功</td>
+                                    <td>---</td>
+                                </tr>
+                                <tr>
+                                    <td>2019-05-10 10:27</td>
+                                    <td>胡素素</td>
+                                    <td>**** **** **** 5789</td>
+                                    <td><span class="red">200</span></td>
+                                    <td>成功</td>
+                                    <td>---</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                        <div class="pagination">
+                            <a href="" class="page-handle disabled">首页</a>
+                            <a href="" class="page-handle disabled">上一页</a>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="" class="page-handle">下一页</a>
+                            <a href="" class="page-handle">末页</a>
+                            <span>共25页</span>
+                            <span>跳转</span>
+                            <input type="text" class="common-input num-input" />
+                            <span>页</span>
+                            <a href="" class="page-handle pagination-sure">确定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-box ">
+        </div>
+    </div>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/lottie.min.js"></script>
+    <script src="../../js/zane-calendar.min.js"></script>
+    <script>
+        +function () {
+            $('.means-tabs').tabChange({
+                item: 'li',
+                underlineClass: '.underline',
+                tabsContent: '.means-info-content',
+                hide: 'hide'
+            });
+            // 小猪动效
+            var pigAnimation = lottie.loadAnimation({
+                container: document.querySelector('.deposit-pig'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: false,
+                path: '../../js/cash.json'
+            });
+            $('.btn-pig').mouseenter(function () {
+                pigAnimation.play();
+                pigAnimation.setSpeed(1.7);
+                setTimeout(function () {
+                    pigAnimation.setSpeed(1);
+                }, 1000);
+            }).mouseleave(function () {
+                pigAnimation.stop();
+            })
+            // 提现页面效果切换
+            $('.cash-out-label').on('click', 'span.cash-btn', function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.cash-handle-content').addClass('hide').siblings('[data-card="' + $(this).index() + '"]').removeClass('hide');
+            })
+            // 修改绑定卡，添加卡片
+            $('.card-revise').click(function () {
+                $('.bank-card-map').addClass('hide').last().removeClass('hide')
+            })
+            $('.bank-account-manage .bank-card-add').click(function () {
+                $('.bank-card-map').addClass('hide').last().removeClass('hide')
+            });
+            // 下拉选择
+            $('#select').dropDownSelect({nextSelectDom: '#next-select'});
+            // 上传按钮hover效果
+            $('.btn-upload').mouseover(function () {
+                $(this).siblings('img').css('top', '-10px');
+            }).mouseleave(function () {
+                $(this).siblings('img').css('top', '0px');
+            });
+            // 日期范围选择
+            zaneDate({
+                elem:'#time',
+                begintime:'2019-6-10',
+                endtime:'2019-6-10',
+                type:'doubleday',
+            });
+            // 测试代码
+            $('#type-cash').on('click', 'span',function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                if ($(this).index() === 3) {
+                    $('.has-cash').addClass('hide').siblings('.no-cash').addClass('hide').siblings('[data-cash="'+ 1 +'"]').removeClass('hide');
+                } else if ($(this).index() === 2) {
+                    $('.has-cash').addClass('hide').siblings('.no-cash').addClass('hide').siblings('[data-cash="'+ 0 +'"]').removeClass('hide');  
+                } else {
+                    $('.has-cash').removeClass('hide').siblings('.no-cash').addClass('hide')
+                }
+            });
+        }()
+    </script>
+</body>
+
+</html>
