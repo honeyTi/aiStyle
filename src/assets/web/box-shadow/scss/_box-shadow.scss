@@ -1,0 +1,56 @@
+
+.item{
+  margin: 0 20px;
+  float: left;
+  width:200px;
+  background: #fff;
+  cursor: pointer;
+}
+.item.shadow{
+  height: 300px;
+  padding: 34px 0 20px;
+  @include transition(all .2s linear);
+  img{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+  }
+  .name{
+    margin: 18px 10px 0;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height: 21px;;
+  }
+  .desc{
+    display: block;
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    color: #b0b0b0;
+  }
+  .price{
+    display: block;
+    margin: 0 10px 10px;
+    text-align: center;
+    color: #ff6700;
+    font-size: 14px;
+    .num{
+      color: #b0b0b0;
+      text-decoration: line-through;
+    }
+  }
+  &:hover{
+    @include box-shadow(0 15px 30px rgba(0,0,0,0.1));
+    @include transform(translate3d(0, -2px, 0));
+  }
+}

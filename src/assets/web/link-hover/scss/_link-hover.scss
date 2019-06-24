@@ -1,0 +1,31 @@
+.links{
+  background: #fff;
+  padding: 0 15px;
+  .link{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #333;
+    height: 60px;
+    line-height: 60px;
+    &:before{
+      position: absolute;
+      content: '';
+      left:50%;
+      bottom:0;
+      height: 2px;
+      background: transparent;
+      width: 0;
+      @include transition(all 0.4s);
+    }
+    &:hover{
+      color: #4B98FF; ;
+      &:before{
+        background: #4B98FF;
+        width: 100%;
+        left:0;
+      }
+    }
+  }
+}

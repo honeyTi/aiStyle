@@ -1,0 +1,30 @@
+.catListTag{
+  position: relative;
+  width:240px;
+  height:240px;
+  .center{
+    position: absolute;
+    top:50%;
+    right:0;
+    margin:-20px auto 0;
+    left:0;
+    height: 40px;
+    width:80px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    border:1px solid #ccc;
+    color: #333;
+    z-index: 2;
+    background: #fff;
+  }
+}
+.cloud{
+  margin: 0 auto;
+  width:240px;
+  height:240px;
+  background: #fff;
+  li{
+    position: absolute; overflow: visible;
+  }
+}

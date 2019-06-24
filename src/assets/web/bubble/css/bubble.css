@@ -1,0 +1,10 @@
+.bubbles {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background: -webkit-gradient(linear, left bottom, left top, from(#c8e8f8), to(#2595f2));
+    background: linear-gradient(to top, #c8e8f8, #2595f2);
+}

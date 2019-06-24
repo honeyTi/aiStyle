@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@mixin placeholder($val){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $val
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   $val
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $val
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $val
+  }
+}

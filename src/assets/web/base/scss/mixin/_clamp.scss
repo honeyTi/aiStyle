@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@mixin clamp($attr){
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $attr;
+  -webkit-box-orient: vertical;
+}

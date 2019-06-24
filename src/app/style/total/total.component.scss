@@ -1,0 +1,19 @@
+.content {
+    width: 100%;
+    &:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+    .style-content {
+        float: left;
+        width: calc(100% - 220px);
+        min-width: 980px;
+    }
+    .style-map {
+        float: left;
+        width: 220px;
+        padding-left: 20px;
+    }
+}

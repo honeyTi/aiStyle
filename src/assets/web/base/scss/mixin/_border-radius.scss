@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@mixin border-radius($value:3px){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}

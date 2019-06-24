@@ -1,0 +1,56 @@
+@charset 'utf-8';
+@mixin link($width, $num, $listWidth, $math) {
+    width: $width;
+    margin: 0 auto;
+    margin-bottom: 95px;
+    h1.title {
+        background: url('../images/title-bg.png') no-repeat;
+        background-size: 100% 100%;
+        width: 300px;
+        height: 125px;
+        font-size: 32px;
+        color: #d75d08;
+        font-weight: bold;
+        margin: 0 auto;
+        letter-spacing: 10px;
+        padding: 65px 0 0 50px;
+        @include box-sizing(border-box);
+    }
+    .link-content {
+        width: 100%;
+        border-radius: 12px;
+        border: 2px solid #E38029;
+        background: #FED074;
+        padding-top: 25px;
+        text-align: center;
+        font-size: 0;
+        a {
+            display: inline-block;
+            border: 3px solid #E16A19;
+            border-radius: 10px;
+            letter-spacing: 0;
+            overflow: hidden;
+            width: $listWidth;
+            @include box-sizing(border-box);
+            height: 146px;
+            margin-bottom: 25px;
+            margin-right: calc((100% - (#{$listWidth} * #{$num})) / #{$num + 1});
+            &:nth-child(#{$math}) {
+                margin-right: 0;
+            }
+            img {
+                width: 100%;
+                height: 105%;
+                transform-origin: center bottom;
+                -webkit-transform-origin: center bottom;
+                @include transform(scale(1));
+                @include transition(all 0.3s linear);
+            }
+            &:hover {
+                img {
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+    }
+}

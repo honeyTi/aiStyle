@@ -1,0 +1,5 @@
+@charset 'utf-8';
+@mixin  animation($attr...) {
+    -webkit-animation: $attr;        
+    animation: $attr;       
+}

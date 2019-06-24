@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "clamp";/*多行显示 clamp(5);文本*/
+@import "singleLine";/*单行显示文本; singleLine*/
+@import "border-radius"; /* 圆角，默认3像素; border-radius(5px)*/
+@import "box-sizing";/*盒模型，默认为border-box; box-sizing(border-box)*/
+@import "box-shadow";/*盒子阴影; box-shadow(1px 2px 3px 4px #000)*/
+@import "transition";/*过渡效果; transition(all,0.3s)*/
+@import "transform";/*css3变形；transform(rotate(190deg))*/
+@import "placeholder";/*input的placeholder元素颜色; placeholder(#fff)*/
+@import "flex";/* flex布局，包含flex-box(),水平对齐方式justify-between(space-between),垂直对齐方式align-center(center),flex-item($val:1)*/
+@import "opacity";/*兼容性 透明度*/
