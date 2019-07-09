@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>英语同步教材知识点微课第二期</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="Keywords" content="英语同步教材知识点微课第二期" />
+    <meta name="description" content="英语同步教材知识点微课第二期" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="http://zujuan.xkw.com/resource/js/jquery.1.9.1.min.js?t=20180507"></script>
+    <script src="http://www.xuekeedu.com/js/windowStorage.js"></script>
+    <script src="http://www.xuekeedu.com/js/xiaoxue.js"></script>
+    <script src="js/jquery.beattext.js"></script>
+    <script src="js/easying.js"></script>
+</head>
+<body id="top">
+    <div class="zxxk_top">
+        <div class="hgroupContainer">
+            <div class="hgroup">
+                <a class="fl" href="http://www.zxxk.com" target="_blank">
+                    <img src="http://www.zxxk.com/images/hd-logo.png" alt="学科网-权威专业教育资源门户">
+                </a>
+                <div class="fr zxxk_top_r">
+                    <div class="fl">
+                        <div id="ShowUserLogin" class="span_top" getloginedcontent="/login/LoginTitle01.aspx">
+                            <div class="land">
+                                <span>欢迎来到小学学科网！</span>
+                                <a rel="nofollow" id="showlogin" href="javascript:" onclick="xiaoxue.popLogin();" target="_self" style="color:#08c">[登录]</a>
+                                <a rel="nofollow" onclick="xiaoxue.regUser();" style="color:#090">[免费注册]</a>
+                                <a rel="nofollow" href="https://sso.zxxk.com/login?bindingService=true&amp;service=http://www.xuekeedu.com/User/ClearCS.ashx" style="color: blue" target="_blank">开通学校服务</a>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        $.ajax({
+                                            type: "GET",
+                                            url: "https://sso.zxxk.com/login?dialogTheme=true&service=http://www.xuekeedu.com/V3/LgCallBack.ashx?curl=http://www.xuekeedu.com/V3/cors.html",
+                                            dataType: "jsonp"
+                                        }).always(function () {
+                                            //PYH:此处只是打了一个时间差，请求本身是没有意义的。。。未找到一个合适的好办法
+                                            xiaoxue.popLogin();
+                                            XKWSSO.closeLoginDialog();
+                                        });
+                                    });
+                                </script>
+                            </div>
+
+
+
+                        </div>
+                        <div data="dropdown" class="pro_dh">
+                            <a class="pagenum" href="/user/index.aspx" needlogin="">用户中心</a>
+                            <div class="ss" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a rel="nofollow" href="http://www.zxxk.com/OnlinePay/" style="color: red;" target="_blank">在线充值</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/myupload.aspx" needlogin="" target="_blank">上传管理</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/mydownload.aspx" needlogin="" target="_blank">下载记录</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/PointConvert.aspx" needlogin="" target="_blank">点数兑换</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/mycomment.aspx" needlogin="" target="_blank">我的评论</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/myfavorite.aspx" needlogin="" target="_blank">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="/user/advice.aspx" needlogin="" target="_blank">挑错建议</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data="dropdown" class="pro_dh">
+                            <a class="pagenum">客户服务</a>
+                            <div class="ss" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a rel="nofollow" title="帮助中心" href="http://www.zxxk.com/service/help.html" target="_blank">帮助中心</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" title="在线客服" href="http://www.zxxk.com/service/online.aspx" target="_blank">在线客服</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data="dropdown" class="pro_dh">
+                            <a class="pagenum">产品服务</a>
+                            <div class="ss ss2col" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a href="http://www.zxxk.com/wxt/" target="_blank" rel="nofollow">网校通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.zxxk.com/spt/" target="_blank" rel="nofollow">视频通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ewt.zxxk.com/" rel="nofollow">e网通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://zujuan.xkw.com/cp/" target="_blank" rel="nofollow">e卷通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://zyt.zxxk.com/index.aspx" target="_blank" rel="nofollow">作业通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://paycenter.zxxk.com/WxtDefault.aspx" target="_blank" rel="nofollow">网学通</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.jxiao.com/show/index.htm" target="_blank" rel="nofollow">微校园</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://gkbbapp.com/WebSite/PC/" target="_blank" rel="nofollow">高考必备</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://px.zxxk.com/" target="_blank" rel="nofollow">学易直播</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.xueyiyun.com/" target="_blank" rel="nofollow">学易云</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://book.zxxk.com/" target="_blank" rel="nofollow">学易书城 </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://dev.zxxk.com/" target="_blank" rel="nofollow">资源开放平台 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data="dropdown" class="pro_dh">
+                            <a class="pagenum">旗下网站</a>
+                            <div class="ss" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <a rel="nofollow" href="http://www.zxxk.com/" target="_blank">中学学科网</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://www.xuekeedu.com/" target="_blank">小学学科网</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://zujuan.xkw.com/" target="_blank">组卷网</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://www.iyoujiao.net/" target="_blank">I幼教</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://www.jiaoping.com/" target="_blank">教评网</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://xxzj.xkw.com/" target="_blank">小学组卷</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://xkzx.vip.qikan.com/index.aspx" target="_blank">中学期刊网</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="http://xkxx.vip.qikan.com/index.aspx" target="_blank">小学期刊网</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="float: right; padding-left: 5px">
+                            <a rel="nofollow" href="http://jfshop.zxxk.com/" target="_blank">商城</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="wrapper">
+            <a class="logo" href="http://www.xuekeedu.com/" target="_blank"></a>
+            <div class="banimg"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="div-bg padT-100">
+            <div class="wrapper">
+                <div class="title">
+                    <span>专题介绍</span>
+                    <div class="kt"></div>
+                </div>
+                <div class="con-box">
+                   <p>
+                    各位老师，你们是不是经常会碰到这种情况：学生课前不知道预习什么，课堂听讲跟不上，课后学完就忘？学生做题时一脸迷茫？一个知识点需要苦口婆心地讲了一遍又一遍？这个专题就能帮您打破这个瓶颈！ 我们将课本中的知识点按照词汇、句型分类，按照课时分开，哪里不会看哪里，哪里不会学哪里，老师们再也不用当复读机了！
+                   </p>
+                </div>
+            </div>
+        </div>
+        <div class="box-bg box-bottombg"></div>
+    </div>
+
+    <div class="box" id="rjper">
+        <div class="div-bg div-bg-w">
+            <div class="wrapper">
+                <div class="title">
+                    <span>人教PEP</span>
+                </div>
+                <div class="con-box">
+                    <a href="#" target="_black">
+                        <img src="images/fm1.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm2.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm3.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm4.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="wyssq">
+        <div class="box-bg"></div>
+        <div class="div-bg padT-30">
+            <div class="wrapper">
+                <div class="title">
+                    <span>外研社三起</span>
+                </div>
+                <div class="con-box">
+                    <a href="#" target="_black">
+                        <img src="images/fm1.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm2.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm3.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm4.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box-bg box-bottombg"></div>
+    </div>
+
+    <div class="box" id="jjb">
+        <div class="div-bg div-bg-w">
+            <div class="wrapper">
+                <div class="title">
+                    <span>冀教版</span>
+                </div>
+                <div class="con-box">
+                    <a href="#" target="_black">
+                        <img src="images/fm1.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm2.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm3.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm4.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="jtb">
+        <div class="box-bg"></div>
+        <div class="div-bg padT-30">
+            <div class="wrapper">
+                <div class="title">
+                    <span>精通版</span>
+                </div>
+                <div class="con-box">
+                    <a href="#" target="_black">
+                        <img src="images/fm1.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm2.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm3.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm4.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box-bg box-bottombg"></div>
+    </div>
+
+    <div class="box" id="slb">
+        <div class="div-bg div-bg-w">
+            <div class="wrapper">
+                <div class="title">
+                    <span>陕旅版</span>
+                </div>
+                <div class="con-box">
+                    <a href="#" target="_black">
+                        <img src="images/fm1.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm2.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm3.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/fm4.png">
+                        <span>陕旅版</span>
+                        <b>六年级下册</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="gdzt">
+        <div class="box-bg"></div>
+        <div class="div-bg padT-30">
+            <div class="wrapper">
+                <div class="title">
+                    <span>更多专题</span>
+                </div>
+                <div class="con-box con-zt">
+                    <a href="#" target="_black">
+                        <img src="images/zt.png">
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/zt.png">
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/zt.png">
+                    </a>
+                    <a href="#" target="_black">
+                        <img src="images/zt.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>
+            <a target="_blank" href="http://www.xuekeedu.com/">小学学科网</a> -
+            <a target="_blank" href="http://xxzj.xkw.com/">小学组卷网</a> -
+            <a target="_blank" href="http://www.xuekeedu.com/wxt/index.aspx">网校通服务</a> -
+            <a target="_blank" href="http://www.xuekeedu.com/zthz/">精品专题</a>
+        </p>
+        <p>©2007-2019学科网版权所有 题库自主建设</p>
+        <p>京ICP备12013499号-3</p>
+    </div>
+
+    <div class="subnav">
+        <div class="subnav-con">
+            <a href="#rjper">人教版PER</a>
+            <a href="#wyssq">外研社三起</a>
+            <a href="#jjb">冀教版</a>
+            <a href="#jtb">精通版</a>
+            <a href="#slb">陕旅版</a>
+            <div class="subnav-img">
+                <span>小学学科网</span>
+                <img src="http://www.xuekeedu.com/jpnew/jpimg/weixin.jpg"></div>
+            <a class="top" href="#top">返回顶部</a>
+        </div>
+    </div>
+<script>
+    $(document).ready(function () {
+        $('.title span').beatText({ isAuth: true, beatHeight: "0.6em", isRotate: false, upTime: 400, downTime: 400 });
+    });
+    $(function () {
+        $(".pro_dh").hover(function () {
+            $(this).find(".ss").slideDown(300);
+        }, function () {
+            $(this).find(".ss").slideUp(300);
+        });
+
+        $(".subnav a,.top").click(function(){
+            var $anchor = $(this);
+            $("body,html").stop().animate({scrollTop: $($anchor.attr("href")).offset().top}, 1000);
+            event.preventDefault();
+        });
+
+        $(window).scroll(function(){
+            if($(window).width() > 1200 && $(window).scrollTop() > 400) {
+                $(".subnav").fadeIn(1000);
+            } else {
+                $(".subnav").fadeOut(1000);
+            }
+            var top = $(document).scrollTop();
+            var nav = $(".subnav-con");
+            var items = $(".main").find(".public");
+            var curId = "";
+
+            items.each(function() {
+                var m = $(this);
+                var itemsTop = m.offset().top;
+                if (top > itemsTop - 100) {
+                    curId = "#" + m.attr("id");
+                } else {
+                    return false;
+                }
+            });
+            var curLink = nav.find(".current");
+            if (curId && curLink.attr("href") != curId) {
+                curLink.removeClass("current");
+                nav.find("[href=" + curId + "]").addClass("current");
+            }
+        });
+        if($(window).width()<800){
+            $('.leftBg,.rightBg').hide();
+        }
+    });
+</script>
+</body>
+</html>

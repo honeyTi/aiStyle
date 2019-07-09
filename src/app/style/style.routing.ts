@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { StyleComponent } from './style.component';
-import {TotalComponent} from './total/total.component';
+import { TotalComponent } from './total/total.component';
+import { CssComponent } from './css/css.component';
 
 const route: Routes = [
     {
@@ -13,6 +14,10 @@ const route: Routes = [
             {
                 path: 'total',
                 component: TotalComponent,
+            },
+            {
+                path: 'css',
+                component: CssComponent,
             },
             {
                 path: '', redirectTo: 'total', pathMatch: 'full'

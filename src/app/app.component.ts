@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor() {}
+  public menu: Array<object>;
+  constructor(private router: Router) {}
+  // 点击事件
+  changePage(data: any) {
+    this.router.navigate([data.href]);
+  }
   ngOnInit(): void {
-
+    this.menu = [
+      {name: '嵌入页面特效', href: 'style/total'},
+      {name: '设计样式规范', href: 'style/css'},
+      {name: 'hover样式获取', href: ''}
+    ];
   }
 }

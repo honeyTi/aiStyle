@@ -1,0 +1,14 @@
+<monaco-editor theme="vs-dark" [file]="files" ></monaco-editor>
+<div class="content">
+  <div class="style-map">
+    <div class="map-content">
+      <h2>1、2d效果</h2>
+      <div class="list">
+          <app-button-card *ngFor="let item of classList.btn_2d; let i=index" [name]="item.name" [hoverClass]='item.className' [count]='i + 1'></app-button-card>
+      </div>
+    </div>
+  </div>
+  <div class="style-link">
+    内容区域
+  </div>
+</div>
