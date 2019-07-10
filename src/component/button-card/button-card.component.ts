@@ -9,6 +9,7 @@ export class ButtonCardComponent implements OnInit {
   @Input() name: string;
   @Input() count: number;
   @Input() hoverClass: string;
+  @Input() themeType: string;
 
   constructor() { }
 

@@ -16,8 +16,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.menu = [
       {name: '嵌入页面特效', href: 'style/total'},
-      {name: '设计样式规范', href: 'style/css'},
-      {name: 'hover样式获取', href: ''}
+      {name: 'hover样式获取', href: 'style/css'},
+      // {name: 'hover样式获取', href: ''}
     ];
   }
 }

@@ -1,14 +1,49 @@
-<monaco-editor theme="vs-dark" [file]="files" ></monaco-editor>
+<!-- <monaco-editor theme="vs-dark" [file]="files" ></monaco-editor> -->
 <div class="content">
   <div class="style-map">
     <div class="map-content">
-      <h2>1、2d效果</h2>
+      <h2 id="map1">1、2d效果</h2>
       <div class="list">
-          <app-button-card *ngFor="let item of classList.btn_2d; let i=index" [name]="item.name" [hoverClass]='item.className' [count]='i + 1'></app-button-card>
+          <app-button-card *ngFor="let item of classList.btn_2d; let i=index" [name]="item.name" [hoverClass]='item.className' [count]='i + 1' themeType="1"></app-button-card>
+      </div>
+    </div>
+    <div class="map-content">
+      <h2 id="map2">2、边框hover效果</h2>
+      <div class="list">
+          <app-button-card *ngFor="let item of classList.border_transition; let i=index" [name]="item.name" [hoverClass]='item.className' [count]='i + 1' themeType="2"></app-button-card>
+      </div>
+    </div>
+    <div class="map-content">
+      <h2 id="map3">3、雪碧图移入效果</h2>
+      <div class="list">
+        <div *ngFor="let item of [].constructor(6);let i=index" [ngClass]="['sprit-map', 'sprite-map-' + (i + 1)]"></div>
+      </div>
+    </div>
+    <div class="map-content">
+      <h2 id="map4">4、swiper效果</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+          <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
       </div>
     </div>
   </div>
   <div class="style-link">
-    内容区域
+    <nz-anchor nzOffsetTop="64">
+      <nz-link nzHref="#map1" nzTitle="1、2d效果"></nz-link>
+      <nz-link nzHref="#map2" nzTitle="2、边框hover效果"></nz-link>
+      <nz-link nzHref="#map3" nzTitle="3、雪碧图移入效果"></nz-link>
+      <nz-link nzHref="#map4" nzTitle="4、swiper效果"></nz-link>
+    </nz-anchor>
   </div>
 </div>

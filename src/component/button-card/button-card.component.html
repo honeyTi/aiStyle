@@ -1,6 +1,7 @@
 <div class="card">
     <div class="img">
-        <img src="../../assets/img/demo-img.jpg" alt="头像" [ngClass]="hoverClass">
+        <img src="../../assets/img/demo-img.jpg" alt="头像" [ngClass]="hoverClass" *ngIf="themeType == '1'">
+        <a href="" *ngIf="themeType == '2'" [ngClass]="hoverClass">{{name}}</a>
     </div>
     <div class="title">{{count}}-{{name}}</div>
 </div>

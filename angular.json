@@ -40,7 +40,8 @@
             "styles": [
               "src/theme.less",
               "src/styles.scss",
-              "src/assets/css/hover.css"
+              "src/assets/css/hover.css",
+              "./node_modules/swiper/dist/css/swiper.min.css"
             ],
             "scripts": []
           },

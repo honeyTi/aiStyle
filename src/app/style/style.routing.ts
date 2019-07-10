@@ -20,7 +20,7 @@ const route: Routes = [
                 component: CssComponent,
             },
             {
-                path: '', redirectTo: 'total', pathMatch: 'full'
+                path: '', redirectTo: 'css', pathMatch: 'full'
             }
         ]
     }

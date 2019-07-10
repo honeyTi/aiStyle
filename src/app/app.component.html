@@ -1,5 +1,5 @@
 <nz-layout class="layout">
-    <nz-header style="position:fixed; width:100%">
+    <nz-header style="position:fixed; width:100%; z-index: 1000">
         <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
             <li nz-menu-item *ngFor="let item of menu; let i = index" (click)="changePage(item)" >{{ item.name }}</li>
         </ul>
