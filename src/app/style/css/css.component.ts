@@ -16,12 +16,18 @@ export class CssComponent implements OnInit {
   };
   public classList: object;
   swiper: Swiper;
+  public active: number;
 
   constructor() {
     this.classList = BtnName;
   }
 
+  hover(data: number) {
+    this.active = data;
+  }
+
   ngOnInit() {
+    this.active = 0;
     this.swiper = new Swiper('.swiper-container',{
       autoplay: true,
       loop: true,

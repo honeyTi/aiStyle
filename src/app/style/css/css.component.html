@@ -13,12 +13,14 @@
           <app-button-card *ngFor="let item of classList.border_transition; let i=index" [name]="item.name" [hoverClass]='item.className' [count]='i + 1' themeType="2"></app-button-card>
       </div>
     </div>
+    <!-- 雪碧图 -->
     <div class="map-content">
       <h2 id="map3">3、雪碧图移入效果</h2>
       <div class="list">
         <div *ngFor="let item of [].constructor(6);let i=index" [ngClass]="['sprit-map', 'sprite-map-' + (i + 1)]"></div>
       </div>
     </div>
+    <!-- slider样式 -->
     <div class="map-content">
       <h2 id="map4">4、swiper效果</h2>
       <div class="swiper-container">
@@ -37,6 +39,22 @@
         <div class="swiper-button-prev swiper-button-white"></div>
       </div>
     </div>
+    <!-- 内容区域效果 -->
+    <div class="map-content">
+      <h2 id="map5">5、雪碧图移入效果</h2>
+      <div class="content-map">
+        <div  *ngFor="let item of [].constructor(3);let i=index" class="content-banner" [class]="'content-banner-'+(i+1)"  [ngClass]="{'content-height': active === i }" (mouseover)="hover(i)">
+          <h1>盒子世界</h1>
+          <p>NO THINKING, NO LEARNING 让思考回归学习</p>
+          <div nz-row nzType="flex" nzJustify="space-around" class="btn-list">
+            <div nz-col nzSpan="4">小学学生端</div>
+            <div nz-col nzSpan="4">小学老师端</div>
+            <div nz-col nzSpan="4">盒子播报</div>
+            <div nz-col nzSpan="4">欢迎加入</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="style-link">
     <nz-anchor nzOffsetTop="64">
@@ -44,6 +62,7 @@
       <nz-link nzHref="#map2" nzTitle="2、边框hover效果"></nz-link>
       <nz-link nzHref="#map3" nzTitle="3、雪碧图移入效果"></nz-link>
       <nz-link nzHref="#map4" nzTitle="4、swiper效果"></nz-link>
+      <nz-link nzHref="#map5" nzTitle="5、雪碧图移入效果"></nz-link>
     </nz-anchor>
   </div>
 </div>
